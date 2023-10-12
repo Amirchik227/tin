@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  nats-streaming:
+    image: nats-streaming
+    container_name: my_nats
+    restart: unless-stopped
+    ports:
+      - "4222:4222"
+      - "8222:8222"
